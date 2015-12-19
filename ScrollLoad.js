@@ -4,9 +4,11 @@ $.fn.extend({
             'obj' : $(this),
             'callback' : callback
         }, scrollLoadTrigger);
+        return $(this);
     },
     unbindScrollLoad : function(){
         $(window).unbind('scroll');
+        return $(this);
     }
 });
 
