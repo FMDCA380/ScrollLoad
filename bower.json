@@ -1,0 +1,13 @@
+{
+  "name": "ScrollLoad",
+  "description": "ScrollLoad",
+  "keywords": [
+    "ScrollLoad"
+  ],
+  "homepage": "https://github.com/FMDCA380/ScrollLoad",
+  "license": "MIT",
+  "moduleType": "globals",
+  "ignore": [
+    "/.*"
+  ]
+}
