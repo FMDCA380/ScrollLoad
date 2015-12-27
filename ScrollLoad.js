@@ -17,7 +17,7 @@ var scrollLoadTrigger = function(event){
     var obj = data.obj;
     var url = obj.attr('_url');
     var callback = data.callback;
-    if((obj.offset().top - $(window).scrollTop()) < ($(window).height() + 100)){
+    if((obj.offset().top - $(window).scrollTop()) < (document.body.clientHeight() + 100)){
         //执行加载
         obj.unbindScrollLoad();
         var scrollStatus = $('.mt-scroll-status');
