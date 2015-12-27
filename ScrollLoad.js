@@ -16,8 +16,12 @@ var scrollLoadTrigger = function(event){
     var data = event.data;
     var obj = data.obj;
     var url = obj.attr('_url');
+    var windowHeight = $(window).height();
     var callback = data.callback;
-    if((obj.offset().top - $(window).scrollTop()) < (document.body.clientHeight() + 100)){
+    if($(window).height() == $(document).height()){
+        windowHeight = document.body.clientHeight;
+    }
+    if((obj.offset().top - $(window).scrollTop()) < (windowHeight + 100)){
         //执行加载
         obj.unbindScrollLoad();
         var scrollStatus = $('.mt-scroll-status');
