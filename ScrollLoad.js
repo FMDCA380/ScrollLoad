@@ -18,6 +18,9 @@ var scrollLoadTrigger = function(event){
     var url = obj.attr('_url');
     var windowHeight = $(window).height();
     var callback = data.callback;
+    if(url == "#"){
+        return;
+    }
     if($(window).height() == $(document).height()){
         windowHeight = document.body.clientHeight;
     }
